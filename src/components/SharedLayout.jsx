@@ -1,21 +1,34 @@
-import React, {useState} from 'react'
-import { Outlet } from 'react-router-dom'
+import React, {useState, useEffect} from 'react'
+import { useLocation, Outlet } from 'react-router-dom'
 
 import Navbar from './Navbar'
 
 const SharedLayout = () => {
-  const [isPath, setIsPath] = useState(false)
 
-  // useEffect(() => {
-  //   window.location.pathname 
-  // }, [isPath])
-  
-console.log(window.location.pathname);
-console.log('href', window.location.href);
+
+ const { pathname} = useLocation()
+
+ const bgColor = `
+        ${pathname === '/' ? 'bg-home-mobile' 
+        : pathname === '/destination' ? 'bg-destination-mobile' 
+        : pathname === '/crew' ? 'bg-crew-mobile' 
+        : 'bg-technology-mobile'} 
+        ${pathname === '/' ? 'sm:bg-home-tablet' 
+        : pathname === '/destination' ? 'sm:bg-destination-tablet' 
+        : pathname === '/crew' ? 'sm:bg-crew-tablet' 
+        : 'sm:bg-technology-tablet'} 
+        ${pathname === '/' ? 'xl:bg-home-desktop' 
+        : pathname === '/destination' ? 'xl:bg-destination-desktop' 
+        : pathname === '/crew' ? 'xl:bg-crew-desktop' 
+        : 'xl:bg-technology-desktop'} 
+        bg-no-repeat bg-cover min-h-screen flex flex-col relative
+
+ `
+
   return (
-    <div className='bg-home-mobile sm:bg-home-tablet xl:bg-home-desktop bg-no-repeat bg-cover h-screen sm:h-[120vh] flex flex-col relative'>
+    <div className={`${bgColor}`}> 
       <Navbar />
-      <main className='mt-12' >
+      <main className='mt-12 ' >
         <Outlet />
       </main>
     </div>
