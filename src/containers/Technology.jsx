@@ -52,7 +52,7 @@ const Technology = () => {
         {
           technology.map((tech, i) => {
             return (
-              <motion.div key={i} whileInView={{ opacity: [0, 1]}} transition={{ duration: 1.5}} onClick={() => handleClick(i)} className={` ${i === index ? 'bg-white text-[#0B0D17] border-0' : 'bg-transparent border-solid'} xl:hover:bg-white/50 xl:hover:text-[#0B0D17] rounded-[50%] h-10 w-10 font-Heading text-lg sm:text-2xl border-[1px] sm:w-16 sm:h-16`}>
+              <motion.div key={i} whileInView={{ opacity: [0, 1]}} transition={{ duration: 1.5}} onClick={() => handleClick(i)} className={` ${i === index ? 'bg-white text-[#0B0D17] border-0' : 'bg-transparent border-solid'} xl:hover:bg-white/50 xl:hover:text-[#0B0D17] rounded-[50%] h-10 w-10 font-Heading text-lg sm:text-2xl border-[1px] sm:w-16 sm:h-16 cursor-pointer`}>
                 <div className='mt-1 sm:mt-[14px]'>{i + 1}</div>
               </motion.div>
             )
