@@ -2,10 +2,11 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 
 import { BackgroundHomeDesktop, BackgroundHomeMobile, BackgroundHomeTablet } from '../assets/home'
+import MotionWrapper from './MotionWrapper'
 
 const Home = () => {
   return (
-    <div className='flex flex-col mt-2 lg:mt-10 xl:mt-20 items-center xl:flex-row'>
+    <MotionWrapper className='flex flex-col mt-2 lg:mt-10 xl:mt-20 items-center xl:flex-row'>
       <div className='flex flex-col text-center xl:text-left mx-auto my-0 xl:w-2/6 xl:ml-48 '>
           <h5 className='font-paragraph uppercase tracking-widest text-color-2 text-[1.75rem]'>so, you want to travel to</h5>
           <div className='uppercase font-Heading tracking-widest text-[5rem] mt-3 text-color-3 xl:text-[6.5rem]'>space</div>
@@ -18,7 +19,7 @@ const Home = () => {
                         w-[11rem] h-[11rem] uppercase text-xl mt-20 xl:mr-60 xl:hover:outline xl:hover:outline-[60px] xl:hover:outline-white/10 '>
         <NavLink to='destination'>explore</NavLink>
       </div>
-    </div>
+    </MotionWrapper>
   )
 }
 
