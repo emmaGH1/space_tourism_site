@@ -3,7 +3,7 @@ import { motion } from 'framer-motion'
 
 import MotionWrapper from './MotionWrapper'
 import { 
-  SpaceCapsuleImageLandscape, SpaceCapsuleImagePortrait, SpacePortImagePortrait, SpacePortImageLandscape, LaunchVehicleImagePortrait, LaunchVehicleImageLandscape
+  SpaceCapsuleImageLandscape, SpaceCapsuleImagePortrait, SpacePortImageLandscape, SpacePortImagePortrait,LaunchVehicleImagePortrait, LaunchVehicleImageLandscape
 } from '../images/images'
 import data from '../assets/data.json'
 
@@ -46,7 +46,7 @@ const Technology = () => {
       <span className='font-paragraph text-white/25 font-bold mr-2 uppercase'>03</span>space launch 101
       </div>
       <div className='xl:flex xl:flex-row-reverse items-center'>
-      <motion.img className=' h-[10.625rem] w-full sm:h-[20rem] xl:h-[23.125rem] xl:w-[21.875rem] xl:bg-left' src={images[index][bigScreenWidth]} alt='technology image' />
+      <motion.img className=' h-[10.625rem] w-full sm:h-[20rem] xl:h-[23.125rem] xl:w-[21.875rem] xl:bg-contain xl:bg-center' src={images[index][bigScreenWidth]} alt='technology image' />
       <div className='xl:flex xl:flex-row xl:h-full xl:ml-44 xl:mt-7'>
       <div className='flex justify-between text-center mt-10 w-3/6 mx-auto xl:w-2/5 xl:flex-col xl:my-0 xl:justify-between'>
         {
