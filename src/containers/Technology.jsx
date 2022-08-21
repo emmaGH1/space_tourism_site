@@ -59,12 +59,12 @@ const Technology = () => {
           })
         }
       </div>
-      <div>
+      <div className='md:mt-10'>
       <div className='uppercase text-color-2 mix-blend-normal text-center font-paragraph tracking-[.1477rem] mt-8 sm:text-2xl xl:text-xl xl:-mt-2 xl:text-left'>
         The Terminology...
       </div>
       <div className='font-Heading text-2xl text-center mb-4 mt-2 uppercase sm:text-3xl xl:text-left xl:text-5xl'>{technology[index].name}</div>
-      <div className='text-center font-paragraph w-[87%] text-color-2 sm:w-[80%] mx-auto leading-9 text-lg my-0 sm:mt-3 sm:text-left sm:mb-5 xl:w-[45%] xl:mx-0  xl:text-base'>{technology[index].description}</div>
+      <div className='text-center font-paragraph w-[87%] text-color-2 sm:w-[80%] mx-auto leading-9 text-lg my-0 sm:mt-3 sm:text-left sm:mb-5 xl:w-[70%] xl:mx-0  xl:text-base'>{technology[index].description}</div>
      </div>
      </div>
      </div>
