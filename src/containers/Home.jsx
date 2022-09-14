@@ -16,7 +16,8 @@ const Home = () => {
           </div>
       </div>
       <div className='text-color-1 bg-white text-center flex justify-center items-center rounded-[50%]
-                        w-[11rem] h-[11rem] uppercase text-xl mt-20 xl:mr-60 xl:hover:outline xl:hover:outline-[60px] xl:hover:outline-white/10 '>
+                        w-[11rem] h-[11rem] uppercase text-xl mt-20 xl:mr-60 xl:hover:outline xl:hover:outline-[60px]
+                         xl:hover:outline-white/10 xl:hover:transition-all'>
         <NavLink to='destination'>explore</NavLink>
       </div>
     </MotionWrapper>
