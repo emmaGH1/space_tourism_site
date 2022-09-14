@@ -15,11 +15,13 @@ const Home = () => {
             of on the edge of it. Well sit back, and relax because we’ll give you a truly out of this world experience!
           </div>
       </div>
+      <NavLink to='destination'>
       <div className='text-color-1 bg-white text-center flex justify-center items-center rounded-[50%]
                         w-[11rem] h-[11rem] uppercase text-xl mt-20 xl:mr-60 xl:hover:outline xl:hover:outline-[60px]
-                         xl:hover:outline-white/10 xl:hover:transition-all'>
-        <NavLink to='destination'>explore</NavLink>
+                         xl:hover:outline-white/10 xl:hover:transition-all xl:hover:duration-1000'>
+        <span>explore</span>
       </div>
+      </NavLink>
     </MotionWrapper>
   )
 }
