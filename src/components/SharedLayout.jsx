@@ -28,9 +28,11 @@ const SharedLayout = () => {
   return (
     <div className={`${bgColor}`}> 
       <Navbar />
+      {   
       <main className='mt-12 ' >
         <Outlet />
       </main>
+      }
     </div>
   )
 }
